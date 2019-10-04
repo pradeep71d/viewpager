@@ -37,11 +37,11 @@ public class FragmentViewPager extends Fragment {
     }
 
     public static FragmentViewPager newInstance(String text, int image) {
-        FragmentViewPager f=new FragmentViewPager();
-        Bundle b=new Bundle();
-        b.putString("text",text);
-        b.putInt("img",image);
-        f.setArguments(b);
-        return f;
+        FragmentViewPager fragmentViewPager=new FragmentViewPager();
+        Bundle bundle=new Bundle();
+        bundle.putString("text",text);
+        bundle.putInt("img",image);
+        fragmentViewPager.setArguments(bundle);
+        return fragmentViewPager;
     }
 }
